@@ -1,0 +1,54 @@
+/* Service Section or cover from landing page */
+
+#services {
+  padding: 50px 0;
+  background-color: #ffffff;
+}
+
+.service-card {
+  margin: 10px 5px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 20px 20px 0 20px;
+  height: 183px;
+}
+
+.service-card .icon {
+  height: 60px;
+}
+
+.service-card:hover {
+  border: 1px solid #ffce07;
+}
+
+.service-card a span {
+  display: none;
+}
+
+.service-card:hover a span {
+  display: inline;
+}
+
+.service-card a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffce07;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+/* technology logo/icon */
+.t-icon{
+  text-align: center;
+  padding: 25px 0;
+}
+
+@media screen and (max-width: 425px){
+  .t-icon{
+    padding: 5px;
+  }
+}

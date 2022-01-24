@@ -1,0 +1,137 @@
+/* Hero Section or cover from landing page */
+/* Layout hero */
+#hero {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 100px);
+  width: 100%;
+  z-index: 10;
+}
+
+#hero::after {
+  content: "";
+  background-image: url("../../Asset/heroBg.jpg");
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 57%;
+  background-position: right;
+  background-position-y: 100px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: -5;
+}
+
+/* additional background */
+.bg {
+  position: absolute;
+  z-index: -5;
+}
+.gr1 {
+  background: url("../../Asset/Group\ 3.png");
+  width: 81px;
+  height: 66px;
+  left: 40%;
+  top: 179px;
+}
+.gr2 {
+  background: url("../../Asset/Group\ 32.png");
+  width: 369px;
+  height: 66px;
+  right: 15%;
+  top: 75%;
+}
+
+/* header separation and header wrapping */
+.h-wrapper {
+  background-color: #fff;
+  width: fit-content;
+  padding: 10px 4rem 22px 10px;
+}
+
+.h-wrapper h1,
+h2 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 76px;
+}
+
+.h-wrapper h2 span {
+  font-weight: normal;
+}
+
+.h-wrapper h3 {
+  font-size: 24px;
+  padding-bottom: 30px;
+}
+
+.h-wrapper .line {
+  width: 70px;
+  height: 5px;
+  margin: 5px 20px;
+  background-color: #ffce07;
+  display: inline-block;
+}
+
+/* Tablet display */
+
+@media screen and (max-width: 1025px) {
+  #hero {
+    background-position-y: 100px;
+  }
+  .h-wrapper {
+    padding: 0.5rem 2rem 0.5rem 0;
+  }
+}
+
+/* Tablet mini display */
+
+@media screen and (max-width: 770px) {
+  #hero{
+    align-items: flex-start;
+    height: 70vh;
+  }
+  #hero::after {
+    opacity: 0.4;
+    
+    background-size: cover;
+  }
+  .bg{
+    display: none;
+  }
+  #hero .wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 170px;
+  }
+  .h-wrapper {
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+  .h-wrapper h1,
+  h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .h-wrapper .line {
+    margin: 10px auto;
+    display: block;
+  }
+}
+
+/* Smartphone */
+
+@media screen and (max-width: 425px) {
+  .h-wrapper h1,
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+  }
+}

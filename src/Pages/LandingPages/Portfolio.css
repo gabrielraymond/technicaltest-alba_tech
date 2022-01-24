@@ -1,0 +1,70 @@
+#portfolio {
+  padding: 50px 0;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+.card:hover {
+  border: 1px solid #ffce07;
+}
+
+.col-lg-4:nth-child(3n + 1) .card {
+  margin-left: 0;
+  margin-right: 40px;
+}
+
+.col-lg-4:nth-child(3n + 0) .card {
+  margin-left: 40px;
+  margin-right: 0;
+}
+
+.card-img-top {
+  border-radius: 10px 10px 0px 0px;
+  height: 231px;
+}
+
+.portfolio .card-body{
+  padding: 20px;
+}
+
+.portfolio .card-body p {
+  margin-bottom: 5px;
+}
+
+.portfolio .card-body p span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  color: #c4c4c4;
+}
+
+.portfolio .card-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffce07;
+}
+
+.portfolio .card-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #272727;
+  font-family: "Nunito", sans-serif;
+}
+
+
+@media screen and (max-width: 995px) {
+  .portfolio .col-lg-4:nth-child(1n + 1) .card{
+    margin: 10px 20px;
+  }
+}

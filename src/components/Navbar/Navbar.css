@@ -1,0 +1,125 @@
+
+.navbar {
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
+}
+
+.navbar-logo {
+  animation-name: example;
+  animation-duration: 1.5s;
+}
+
+@keyframes example {
+  0% {
+    margin-bottom: 50px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.navbar-nav {
+  animation-name: example;
+  animation-duration: 1.5s;
+}
+
+.nav-item {
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: #021718;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 8px 15px !important;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.btn-nav {
+  background: #ffce07;
+  border-radius: 30px;
+  width: 188px;
+  height: 57px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 995px) {
+  .navbar-logo {
+    margin: 0 20px;
+    font-size: 32px;
+  }
+  .navbar-nav {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: calc(100vh - 100px);
+    position: absolute;
+    top: 100px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+  }
+
+  header {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .navbar-nav.active {
+    background: #fbeeac;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 100;
+  }
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: #f4d160;
+    border-radius: 0;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .nav-item {
+    text-align: center;
+    margin: 15px auto;
+    height: auto;
+  }
+
+  .fa-times {
+    font-size: 2rem;
+    margin-right: 3px;
+  }
+}
